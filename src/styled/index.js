@@ -18,6 +18,7 @@ export const FilterDiv = styled.article`
   display: flex;
   position: relative;
   padding: 1rem 2rem;
+  border-radius: 4px;
   margin-top: -3.5rem;
   margin-bottom: 2rem;
   background-color: white;
@@ -71,6 +72,7 @@ export const JobDiv = styled.article`
   margin: auto;
   background-color: white;
   padding: 1rem 2rem;
+  border-radius: 4px;
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;

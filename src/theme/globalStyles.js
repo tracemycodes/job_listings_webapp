@@ -10,6 +10,10 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: hsl(180, 52%, 96%);
+}
 `;
 
 export default GlobalStyle;
