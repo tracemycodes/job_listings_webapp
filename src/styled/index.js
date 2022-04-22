@@ -46,7 +46,7 @@ export const JobDiv = styled.article`
     justify-content: space-between;
   }
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: hsl(180, 14%, 20%);
   }
   h3 {
@@ -76,5 +76,14 @@ export const JobDiv = styled.article`
   }
   .company-duration *+* {
     margin-left: 1rem;
+  }
+  .company-roles button {
+    margin-left: 1rem;
+    background-color: hsl(180, 52%, 96%);
+    border: none;
+    padding: .3rem .5rem;
+    border-radius: 3px;
+    color: hsl(180, 29%, 50%);
+    font-weight: bold;
   }
 `
