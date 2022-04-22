@@ -23,6 +23,15 @@ export const FilterDiv = styled.article`
   background-color: white;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 
+  p {
+      margin-left: auto;
+      color: hsl(180, 14%, 20%);
+      cursor: pointer;
+      &:hover {
+        color: hsl(180, 29%, 50%);
+      }
+    }
+
   button {
     display: flex;
     align-items: center;
@@ -46,6 +55,7 @@ export const FilterDiv = styled.article`
         background-color: hsl(180, 14%, 20%);
       }
     }
+    
   }
 
 `

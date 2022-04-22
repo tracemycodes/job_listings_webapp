@@ -13,15 +13,25 @@ function App() {
   };
 
   const removeFilteredItem = (category) => {
-    let newArr = filter.filter(item => item !== category)
+    let newArr = filter.filter((item) => item !== category);
 
-    setFilter(newArr)
+    setFilter(newArr);
+  };
+
+  const clearFilter = () => {
+    setFilter([]);
   }
 
   return (
     <div className='App'>
       <Header />
-      <Jobs data={data} selectFilter={selectFilter} filter={filter} removeFilteredItem={removeFilteredItem} />
+      <Jobs
+        data={data}
+        selectFilter={selectFilter}
+        filter={filter}
+        removeFilteredItem={removeFilteredItem}
+        clearFilter={clearFilter}
+      />
     </div>
   );
 }
