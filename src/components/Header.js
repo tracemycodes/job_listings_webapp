@@ -4,7 +4,7 @@ import { HeaderBanner } from '../styled/index';
 const Header = () => {
   return (
     <HeaderBanner>
-
+      
     </HeaderBanner>
   )
 }

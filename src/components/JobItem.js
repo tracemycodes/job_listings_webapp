@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { JobDiv } from '../styled'
+import { JobDiv } from '../styled/index'
 
-const JobItem = ({ job }) => {
+const JobItem = ({ job, selectFilter }) => {
 
   const {
     company,
@@ -52,7 +52,7 @@ const JobItem = ({ job }) => {
         </div>
       </div>
       <div className="company-roles">
-        {keyWords.map((word, id) => <button key={id}>{word}</button>)}
+        {keyWords.map((word, id) => <button key={id} onClick={() => selectFilter(word)} >{word}</button>)}
       </div>
     </JobDiv>
   )
