@@ -1,8 +1,80 @@
-import React from 'react';
 import styled from 'styled-components';
+import headerImg from '../images/bg-header-desktop.svg'
 
+
+
+export const HeaderBanner = styled.header`
+  height: 9rem;
+  background-color: hsl(180, 29%, 50%);
+  background-image: url(${headerImg})
+
+
+`;
 
 export const Container = styled.section`
-  background-color: red;
+  background-color: hsl(180, 52%, 96%);
+  padding: 2rem 0rem;
+`;
+
+export const JobDiv = styled.article`
+  width: 90%;
+  max-width: 60rem;
   margin: auto;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .company-details {
+    display: flex;
+  }
+  .company-logo {
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .company-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .company-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h2 {
+    font-size: 1.3rem;
+    color: hsl(180, 14%, 20%);
+  }
+  h3 {
+    font-size: 1rem;
+    color: hsl(180, 29%, 50%);
+    font-weight: bold;
+    display: inline;
+  }
+  .featured {
+    background-color: hsl(180, 14%, 20%);
+    padding: .2rem .4rem;
+    color: white;
+    border-radius: 10px;
+    font-size: .65rem;
+  }
+  .new {
+    background-color: hsl(180, 29%, 50%);
+    padding: .2rem .4rem;
+    color: white;
+    border-radius: 10px;
+    margin: 0 .75rem;
+    font-size: .65rem;
+  }
+  .company-duration span {
+    font-size: .75rem;
+    color: hsl(180, 8%, 52%);
+  }
+  .company-duration *+* {
+    margin-left: 1rem;
+  }
 `

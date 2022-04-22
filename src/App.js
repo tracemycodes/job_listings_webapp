@@ -1,14 +1,13 @@
-import './App.css';
-import data from './data.json'
-import { Container } from './styled';
+import Header from './components/Header';
+import Jobs from './components/Jobs';
+import data from './data.json';
 
 
 function App() {
   return (
     <div className="App">
-      <Container>
-        the man
-      </Container>
+      <Header/>
+      <Jobs data={data}/>
     </div>
   );
 }
